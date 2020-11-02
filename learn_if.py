@@ -1,25 +1,28 @@
 import turtle
-import os
 
-a=10
-b=2
-print ("a = ", a, "b = ", b)
-print ("press a for + ", "press b for - ", "press c for * ", "press d for /")
+# Setup Window
+window = turtle.Screen()
+window.screensize (500, 500)
+window.bgcolor ("green")
+window.title("If")
 
-def add():
-    result=a+b
+# Setup Turtle
+bill = turtle.Turtle()
+bill.color ("red")
 
-def sub():
-    result = a - b
+#define moving step
+step = 15
 
-def mult():
-    result = a * b
+#define moving functions
+def up():
+    
 
-def dev():
-    result = a / b
 
-turtle.onkey(add, "a")
-turtle.onkey (sub, "b")
+
+
+
+
+
 
 
 delay = input (" Press ENTER to EXIT")
