@@ -9,6 +9,7 @@ window.title("If")
 
 # Setup Turtle
 bill = turtle.Turtle()
+bill.shape("turtle")
 bill.color ("red")
 bill.penup()
 
@@ -56,6 +57,8 @@ def move_down():
 
 #Keyboard bindings
 turtle.listen()
+turtle.onkey (bill.pendown, "d")
+turtle.onkey (bill.penup, "u")
 turtle.onkey (move_left, "Left")
 turtle.onkey (move_right, "Right")
 turtle.onkey (move_up, "Up")
